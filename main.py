@@ -7,7 +7,9 @@ from post import Post
 
 app = Flask(__name__)
 
+# create a new list of post as objects from post class
 post_objects = []
+# get the endpoint url
 url_blog = 'https://api.npoint.io/c790b4d5cab58020d391'
 response = requests.get(url_blog)
 all_posts = response.json()
